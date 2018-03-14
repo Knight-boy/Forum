@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <script src="data/cache/logging.js?j3e" type="text/javascript"></script>
-                <form id="lsform" onsubmit="return lsSubmit();" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes"method="post" autocomplete="off">
+                <form id="lsform" onsubmit="return lsSubmit();" action="" method="post" autocomplete="off">
                     <div class="fastlg">
                         <span id="return_ls" style="display:none"></span>
                         <div class="y pns">
@@ -54,7 +54,7 @@
                                         <a href="member.php?mod=register" class="xi2 xwl">立即注册</a>
                                     </td>
                                     <td>
-                                        <a href="javascript:;" onclick="showWindow('login','member.php?mod=logging&action=login&viewlostpow=1')">找回密码</a>
+                                        <a href="javascript:;" onclick="showWindow('login','')">找回密码</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -76,23 +76,9 @@
                             <input name="quickforward" type="hidden" value="yes"/>
                             <input name="handlekey" type="hidden" value="ls"/>
                         </div>
-                        <!--<link href="./src/plugins/oculus.css?t=1486453586" rel="stylesheet">-->
-                        <!--<link disabled="" href="./src/plugins/nc.css?t=1486453586" rel="stylesheet">-->
+                        
                         <script src="./src/plugins/nc.js?t=1486453586" type="text/javascript"></script>
                         <script src="./src/plugins/oculus.js?t=1486453586" type="text/javascript"></script>
-                        <div id="nc-float" style="display:none">
-                            <div class="nc-f-head">
-                                <img class="nc-f-icon" src="./image/TB1_3FrKVXXXXbdXXXXXXXXXXXX-129-128.png" alt="" height="20" width="20">
-                                <span class="nc-f-title">安全验证</span>
-                                <a class="close" href="#"><i class="nc_iconfont">&#xe60c;</i></a>
-                            </div>
-                            <div class="nc-f-body" id="oculus-nc-f-body">
-                                <div class="nc-f-des">请完成以下验证码</div>
-                                <div  id="_umfp" style="width:1px;height:1px"></div>
-                                <div id="nocaptcha"></div>
-                            </div>
-
-                        </div>
                         <script type="text/javascript" reload="1" defer="true">
                             paxmac_ready(function(){
                                 var lsform = document.getElementById('lsform');
@@ -153,7 +139,7 @@
             <div class="p_pop h_pop" id="mn_userapp_menu" style="display:none"></div>
             <div class="clearfix" id="mu"></div>
             <div class="clearfix" id="scbar">
-                <form id="scbar_form" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" method="post" target="_blank" autocomplete="off">
+                <form id="scbar_form" onsubmit="searchFocus($('scbar_txt'))" action="" method="post" target="_blank" autocomplete="off">
                     <input type="hidden" name="mod" id="scbar_mod" value="forum"/>
                     <input type="hidden" name="formhash" value="f7a28138"/>
                     <input type="hidden" name="srchtype" value="title"/>
@@ -181,8 +167,8 @@
                                     <a href="https://www.baidu.com/s?tn=80035161_2_dg&wd=%E9%AB%98%E8%80%83" target="_blank" class="xi2" sc="1">高考</a>
                                     <a href="http://yz.chsi.com.cn/" target="_blank" class="xi2" sc="1">考研</a>
                                     <a href="http://www.chsi.com.cn/" target="_blank" class="xi2" sc="1">学信网</a>
-                                    <a href="search.php?mod=forum&amp;srchtxt=%E6%8E%A8%E5%85%8D&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">推免</a>
-                                    <a href="search.php?mod=forum&amp;srchtxt=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">招生简章</a>
+                                    <a href="" target="_blank" class="xi2" sc="1">推免</a>
+                                    <a href="" target="_blank" class="xi2" sc="1">招生简章</a>
 
                                 </div>
 
@@ -204,18 +190,7 @@
             <script type="text/javascript">initSearchmenu('scbar','');</script>
         </div>
     </div>
-    <div id="nc-float" style="display:none">
-        <div class="nc-f-head">
-            <img class="nc-f-icon" src="./image/TB1_3FrKVXXXXbdXXXXXXXXXXXX-129-128.png" alt="" height="20" width="20">
-            <span class="nc-f-title">安全验证</span>
-            <a class="close" href="#"><i class="nc_iconfont"></i></a>
-        </div>
-        <div class="nc-f-body" id="oculus-nc-f-body">
-            <div class="nc-f-des">请完成以下验证码</div>
-            <div id="nocaptcha"></div>
-        </div>
-
-    </div>
+    
     <div class="wp" id="wp">
         <div class="bm clearfix" id="pt">
             <div class="z">
@@ -289,7 +264,6 @@
                         </h1>
                     </div>
                 </div>
-                <!--<link href="./template/wj_paihang.css" rel="stylesheet">-->
                 <div class="wp mtn">
                     <!--[diy=diy3]-->
                     <div class="area" id="diy3"></div>
@@ -618,38 +592,6 @@
                             });
                         })();
 
-
-                        // function $G(id) {
-                        //     return document.getElementById(id);
-                        // }
-                        // var myeditor = UE.getEditor('editor_iframe_holder',{
-                        //     toolbars:[[]],
-                        //     initialContent:'初始化内容',
-                        //     initialFrameHeight:200
-                        // });
-                        // myeditor.addListener('selectionchange',function(){
-                        //     var cmdName = ['bold','italic'],
-                        //         fontName = ['fontfamily','fontsize'];
-                        //     var i = -1;
-                        //     while(i++ < cmdName.length -1) {
-                        //         var state = myeditor.queryCommandState(cmdName[i]);
-                        //         $G(cmdName[i]).style.color = state ===1?"red":"";
-                        //     }
-                        //     i = -1;
-                        //     while(i++<fontName.length -1){
-                        //         var fstate = myeditor.queryCommandValue(fontName[i].toLowerCase());
-                        //         var fselect = $G(fontName[i]);
-                        //         for(var j=0;j<fselect.options.length;j++){
-                        //             if(fselect.options[j].value.toLowerCase().indexOf(fstate.split(",")[0])!=-1){
-                        //                 fselect.options[j].selected = "true";
-                        //             }
-                        //         }
-                        //     }
-                        // });
-                        // function execUnderline(cmd){
-                        //     myeditor.execCommand(cmd);
-                        // }
-
                     </script>
                 </div>
                 <div style="margin:5px 0;border-bottom: 1px solid #eeeeee">
@@ -712,7 +654,7 @@
                     <div class="bm_c">
                         <script type="text/javascript">var lasttime = 1520301387;var listcolspan ="5";</script>
                         <div id="forumnew" style="display:none"></div>
-                        <form method="post" autocomplete="off" name="moderate" id="moderate" action="forum.php?mod=topicadmin&action=moderate&fid=37&infloat=yes&nopost=yes">
+                        <form method="post" autocomplete="off" name="moderate" id="moderate" action="">
                             <input type="hidden" name="formhash" value="bd6c9ef5">
                             <input type="hidden" name="listextra" value="page%3D1">
                             <table summary="forum_37" cellspacing="0" cellpadding="0" id="threadlisttableid">
@@ -1108,10 +1050,7 @@
                                     </td>
                                 </tr>
                                 </tbody>
-
-
-
-
+                                
                             </table>
 
                         </form>
