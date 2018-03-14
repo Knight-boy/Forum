@@ -3,668 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Forum - By Knight</title>
-    <!--<link ref="stylesheet" type="text/css " href="./data/cache/style_1_widthauto"/>-->
     <script type="text/javascript" src="./data/cache/common.js"></script>
-    <style type="text/css">
-        body{
-            background-color: #E8EFF5;
-        }
-        body,ul,li,dl,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,.pr,.pc{
-            margin:0;
-            padding:0;
-        }
-
-        * {
-            word-wrap:break-word;
-        }
-        body,input,button,select,textarea{
-            font-family:Tahoma,'Microsoft YaHei','Simsun';
-            font-size:12px;
-            line-height:1.5;
-            color:#444;
-
-        }
-        .clearfix::after{
-            content:".";
-            clear:both;
-            display:block;
-            height:0px;
-            visibility:hidden;
-        }
-        #toptb {
-            min-width: 960px;
-            border-bottom: 1px solid #CDCDCD;
-            background-color: #f2f2f2;
-            background-attachment: scroll;
-            background-repeat: repeat;
-            background-position-x:0%;
-            background-position-y:0%;
-            background-size: auto;
-            background-origin:padding-box;
-            background-clip:border-box;
-            height: 28px;
-            line-height:28px;
-            margin-bottom: 10px;
-        }
-        a {
-            color:#333;
-            text-decoration: none;
-        }
-
-        .wp{
-            margin:0px auto;
-            width:960px;
-        }
-        .wp .z{
-            float:left;
-        }
-        .y {
-            float: right;
-        }
-        .z a, .y a{
-            color:#000;
-            text-decoration: none;
-            vertical-align: center;
-        }
-        .z a:hover,.y a:hover{
-            text-decoration: underline;
-        }
-        #hd .fastlg{
-            padding-top:10px;
-
-        }
-        .fastlg{
-            line-height:24px;
-        }
-        .fastlg td{
-            padding:2px 0 2px 4px;
-        }
-        table{
-            empty-cells: show;
-            border-collapse: collapse;
-        }
-        .px{
-            height:17px;
-        }
-        .px,.pt{
-            padding:2px 4px;
-            line-height:17px;
-        }
-        .px,.pt,.ps,select{
-            border:1px solid;
-            border-color:#848484 #E0E0E0 #E0E0E0 #848484;
-            background:#FFF url("./image/px.png") repeat-x 0 0;
-        }
-        .vm{
-            vertical-align: middle;
-        }
-        .xgl,xgl a{
-            color:#999 !important;
-        }
-        #nv{
-            top:0px;
-            z-index:199;
-
-            height:33px;
-            overflow: hidden;
-            background:#2B7ACD url("./image/nv.png") no-repeat 0 0
-            /*background-color:#2b7acd;*/
-        }
-        #nv ul li{
-            float:left;
-            list-style:none;
-            /*padding:7px 7px;*/
-
-        }
-        #nv a{
-            text-decoration: none;
-            color:#ca4312;
-        }
-        #nv ul li a{
-            text-decoration: none;
-            font-size:13px;
-            color:#fff;
-            margin:0 auto;
-            padding:15px 20px;
-            overflow: hidden;
-            border-right: 1px solid #fefefe;
-            position:relative;
-            top:6px;
-        }
-        #nv ul li a:hover{
-            text-decoration: underline;
-            background-color: rgba(21, 70, 153, 0.73);
-        }
-        #nv #qmenu{
-            float:right;
-            display:inline;
-            margin:5px 8px 0;
-            padding-right:0px;
-            width:103px;
-            height:24px;
-            line-height:24px;
-            text-align:center;
-            font-weight:700;
-            background:url('./image/qmenu.png') no-repeat 0 0;
-        }
-        h1,h2,h3,h4,h5,h6{
-            font-size:1em;
-        }
-        #qmenu,.fl .bm_h h2 a,.xil {
-            color:#ca4312;
-        }
-
-        #scbar{
-            background-image:url(./image/search.png);
-        }
-        #scbar {
-            overflow: hidden;
-            height:42px;
-            line-height:42px;
-            border-top:1px solid #FFF;
-            border-bottom: 1px solid #FC6;
-            background:#E8EFF5;
-        }
-        .scbar_icon_td{
-            background-image:url(./image/search.png);
-            background-position-x:0px;
-            background-position-y:-451px;
-        }
-        .scbar_icon_td{
-            width:21px;
-            background:url(./image/search.png) no-repeat 0 -50px;
-        }
-        .scbar_txt_td{
-            background:url(./image/search.png) repeat-x 0 -93px;
-        }
-        #scbar_txt{
-            width:400px;
-            border:1px solid #FFF;
-            outline:none;
-        }
-        .scbar_type_td{
-            width:61px;
-            background:url(./image/search.png) no-repeat 0 -193px;
-
-        }
-        #scbar_type{
-            display:block;
-            padding-left:10px;
-            text-align:left;
-            text-decoration: none;
-        }
-        #scbar_type_menu{
-            margin-top:-8px;
-        }
-        .scbar_btn_td{
-            width:38px;
-            background:url(./image/search.png) no-repeat 8px -142px;
-        }
-        #scbar_btn{
-            margin:0;
-            padding:0;
-            border:none;
-            background:transparent none;
-            box-shadow:none;
-        }
-        #scbar_btn strong{
-            line-height:85px;
-        }
-        #scbar_hot a:hover{
-            text-decoration: underline;
-        }
-        #pn em,.pn strong{
-            font-weight: 700;
-        }
-        .pn em,.pn span,.pn strong{
-            padding:0 10px;
-            line-height: 21px;
-        }
-        .xi2,.xi2 a{
-            color:#000;
-        }
-        .xi2,.xi2 a,.xi3 a{
-            color:#369;
-        }
-        .pnc,a.pnc,.tb .o {
-            border-color:#C74900;
-        }
-        .pn,.tb .o,.tb .o a{
-            background-image:url("./image/pn.png");
-        }
-        .pnc,a.pnc {
-            border-color:#235994;
-            background-color:#06c;
-            backgrounf-position:0 -48px;
-            color:#fff !important;
-        }
-        .pn{
-            vertical-align: middle;
-            overflow: hidden;
-            margin-right: 3px;
-            padding:0;
-            height:23px;
-            border:1px solid #999;
-            background:#E5E5E5 url(./image/pn.png) repeat-x 0 0;
-            cursor:pointer;
-            box-shadow:0px 1px 0px #E5E5E5;
-        }
-
-        .p_pop,.p_pof,.sllt {
-            padding:4px;
-            border:1px solid;
-            min-width: 60px;
-            border-color:#DDD;
-            background:#FEFEFE;
-            box-shadow:1px 2px 2px rgba(0,0,0,0.3);
-        }
-        .p_pop li{
-            display:block;
-        }
-        ul li ,xl li{
-            list-style: none;
-        }
-        .p_pop a{
-            border-bottom-color:#fcf6e6;
-        }
-        .p_pop a{
-            display:block;
-            padding:3px 5px;
-            border-bottom:1px solid #E5EDF2;
-            white-space:nowrap;
-        }
-        .p_pop li:last-child a {
-            border:none;
-        }
-        .wp{
-            margin:0 auto;
-            width:960px;
-        }
-        #pt{
-            margin:2px 0;
-            height:29px;
-            border:none;
-            background: transparent;
-            line-height: 29px;
-        }
-        .bm{
-            border:1px solid #CDCDCD;
-        }
-        .bm,.bn{
-            margin-bottom:10px;
-        }
-        #pt .z{
-            padding-right:10px;
-        }
-        .z{
-            float:left;
-        }
-        #pt .z a,#pt .z em,#pt .z span{
-            float:left;
-            height:29px;
-        }
-        .nvhm {
-            width:16px;
-            background:url(./image/search.png) no-repeat 0 0;
-            line-height:200px;
-            overflow: hidden;
-        }
-        #pt .z em{
-            width:20px;
-            background:url(./image/pt_item.png) no-repeat 3px 10px;
-            line-height: 200px;
-            overflow: hidden;
-        }
-        #pt .z a,#pt .z em,#pt .z span{
-            float:left;
-            height:29px;
-        }
-        #wp .wp{
-            width:auto;
-        }
-        .a_h,.a_mu,.a_c,.a_p,.a_f,.a_t{
-            text-align: center;
-        }
-        .a_t{
-            margin-bottom:10px;
-        }
-        .a_t table{
-            width:100%;
-        }
-        .a_t td{
-            padding:4px 15px;
-            border:1px solid #CDCDCD;
-        }
-        .a_t a:hover,ul li a:hover,.ptA h4 a:hover,dl dt a:hover,dl dd a:hover{
-            text-decoration: underline;
-        }
-        em,cite,i{
-            font-style:normal;
-        }
-        #chart{
-            margin-bottom:5px;
-        }
-        .chart{
-            padding-left:22px;
-            background:url(./image/chart.png) no-repeat 0 50%;
-            color:#999;
-        }
-        .bw0{
-            background-color:transparent;
-        }
-        .bn{
-            border:1px solid #CDCDCD;
-            background:#FFF;
-        }
-        .bm ,.bn {
-            margin-bottom:10px;
-        }
-        .bw0{
-            border:none !important;
-        }
-
-        .chart em{
-            color:#444;
-        }
-        #ct{
-            min-height:300px;
-        }
-        .mn{
-            overflow: hidden;
-        }
-        #wj_contentC {
-            clear:both;
-            width:100%;
-            height:330px;
-            overflow: hidden;
-        }
-
-        #wj_hot24{
-            width:27%;
-            _width:26%;
-            border-right:1px solid #e8e8e8;
-            float:left;
-        }
-        #wj_hot24 .wjhot_blue{
-            background:url(./image/icon10_blue.gif) no-repeat 15px 6px;
-        }
-        #wj_hot24 h3 {
-            padding-left:46px;
-        }
-        #wj_contentC h3{
-            padding-top:7px;
-            height:26px;
-            color: #333;
-            font:700 14px/24px "SimSun-ExtB";
-            text-align:left;
-        }
-        #wj_contentC h3 a{
-            padding-top:8px;
-        }
-        #wj_hot24 .list12 {
-            margin:0 27px 0 15px;
-            width:90%;
-        }
-        #wj_hot24 .list12 ul{
-            height:275px;
-        }
-        #wj_hot24 .list12 span{
-            color:#666;
-        }
-        #wj_contentC .list12 ul{
-            margin-bottom: 16px;
-            background:url(./image/bg15.gif) no-repeat -65px 6px;
-            height:275px;
-        }
-        #wj_contentC .list12 li{
-            background:none repeat scroll 0 0 transparent;
-            line-height:28px;
-            height:28px;
-            overflow: hidden;
-            paddding:0 0 0 21px;
-            vertical-align:bottom;
-        }
-        #wj_contentC .list12 li span{
-            float:right;
-        }
-        ul li,xl li{
-            list-style: none;
-        }
-        #wj_online{
-            width:22%;
-            float:left;
-        }
-        #wj_online .wjbk_blue{
-            background:url(./image/icon12_blue.gif) no-repeat 12px 6px;
-        }
-        #wj_online h3{
-            padding-left:42px;
-        }
-        #wj_online .list12,#post .list12{
-            margin-left:15px;
-        }
-        #wj_online .list12 li span,#post .list12 li span{
-            padding-right:52px;
-            width:44px;
-            color:#666;
-            text-align:right;
-        }
-        #wj_users{
-            width:210px;
-            float:right;
-            border-left:1px solid #e8e8e8;
-        }
-        #wj_users h3{
-            padding-top:0px;
-            height:33px;
-            text-align:center;
-            background: url(./image/bg23.gif) repeat-y 102px 0;
-        }
-        #wj_users h3 .now{
-            border-bottom:0 none;
-            font-weight:700;
-        }
-        #wj_users h3 a{
-            float:left;
-            display:inline;
-            width:87px;
-            border-bottom:1px solid #e8e8e8;
-
-            color:#333;
-            font-weight:700;
-            text-decoration: none;
-            padding:5px 9px 3px;
-        }
-        #wj_users .ptA{
-            margin: 6px auto 0 ;
-            height:52px;
-            width:186px;
-            clear:both;
-            text-align: left;
-        }
-        #wj_users .ptA a img{
-            float:left;
-            margin:0 10px 0 0;
-            padding:1px;
-            width:41px;
-            height:41px;
-            border:1px solid #e8e8e8;
-            font-size:inherit;
-        }
-        #wj_users .ptA a:hover{
-            _width:auto;
-        }
-        #wj_users .ptA a:hover img{
-            border:1px solid #2e5598;
-        }
-        #wj_users .ptA h4{
-            line-height:20px;
-        }
-        #wj_users .ptA p{
-            text-indent: 19px;
-            line-height:20px;
-            background:url(./image/viewpay.gif) no-repeat 54px 3px;
-        }
-        #wj_users .ptA p span{
-            margin:0 7px 0 8px;
-            color:#c54703;
-        }
-        #wj_users .ptA .wj_birth{
-            background:url(./image/birth.gif) no-repeat 54px 1px;
-        }
-        #wj_users .ptA .wj_birth span{
-            margin:0 7px 0 0;
-        }
-        .fl {
-            border:1px solid #CDCDCD;
-            border-top:none;
-            background:#FFF;
-        }
-        .fl .bm{
-            margin-bottom:0px;
-            border:none;
-        }
-        .fl .bm_h {
-            border-color:#FC6;
-            background:#FCF6E6 url(./image/titlebg.png) repeat-x 0 0;
-        }
-        .bmw .bm_h {
-            /*border-color:#fff;*/
-            border-right:1px solid #FFF;
-            border-bottom-color:#FC6;
-            border-left:1px solid #FFF;
-            /*background:#E5EDF2;*/
-        }
-        .bm_h {
-            padding:0 10px;
-            height:31px;;
-            border-top:1px solid #FFF;
-            border-bottom:1px solid #C2D5E3;
-            line-height:31px;
-            white-space: nowrap;
-            overflow:hidden;
-        }
-        .bm_h .o{
-            float:right;
-            width:30px;
-        }
-        .bm_h .o img{
-            float:right;
-            margin-top:8px;
-            cursor:pointer;
-        }
-        .bm_c{
-            padding:0 10px;
-        }
-        .fl_tb{
-            width:100%;
-        }
-        .fl_tb td{
-            padding:10px 0;
-        }
-
-        .fl_g{
-            vertical-align: top;
-        }
-        .fl_icn_g{
-            float:left;
-            width:31px;
-        }
-        .fl_g dl{
-            margin-left:31px;
-            padding-left:10px;
-        }
-        .fl_g dt{
-            font-weight:700;
-        }
-        .xw0{
-            font-weight: 400;
-        }
-        .fl_row td {
-            border-top:1px dashed #CDCDCD;
-        }
-        .lk .m li{
-            clear:left;
-            padding:0 0 10px 98px;
-        }
-        .ptm{
-            padding-top:10px !important;
-        }
-        .mbm{
-            margin-bottom:10px !important;
-        }
-        .bbda{
-            border-bottom:1px dashed #CDCDCD;
-        }
-        .lk .m img{
-            display:inline;
-            margin-top:4px;
-            margin-left:-98px;
-        }
-        .lk img{
-            float:left;
-            margin-right:5px;
-            margin-bottom:5px;
-            width:88px;
-            height:31px;
-        }
-        #ft{
-            padding:10px 0 50px;
-            border-top:1px solid #CDCDCD;
-            line-height:1.8;
-            color:#666;
-        }
-        #flk{
-            text-align:right;
-        }
-        #flk img{
-            vertical-align: middle;
-        }
-        .pipe{
-            margin:0 5px;
-            color:#ccc;
-        }
-        .xs0{
-            font-family: Arial;
-            font-size:0.83em;
-            -webkit-text-size-adjust: none;
-        }
-        #scrolltop {
-            visibility:hidden;
-            position:fixed;
-            bottom:100px;
-            display:block;
-            margin:-30px 0 0 2px;
-            width:40px;
-            height:30px;
-            background:#f4f4f4;
-            border:1px solid #cdcdcd;
-            border-radius:3px;
-            border-top:none;
-            cursor:pointer;
-        }
-        #scrolltop a{
-            display:block;
-            width:30px;
-            height:24px;
-            padding:3px 5px;
-            line-height:12px;
-            text-align:center;
-            color:#787878;
-            text-decoration: none;
-            background:url(./image/scrolltop.png) no-repeat 0 0;
-            border-top:1px solid #cdcdcd;
-        }
-        #scrolltop a:hover{
-            border:1px solid #2e5598;
-        }
-        #scrolltop a b{
-            visibility:hidden;
-            font-weight:normal;
-        }
-    </style>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="short ico" href="./favicon.ico" type="image/x-icon">
 </head>
-<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode===27) return false;">
 
     <div id="append_parent"></div>
     <div id="ajaxwaitid"></div>
@@ -672,21 +15,23 @@
         <div class="wp">
             <div class="z">
                 <a href="javascript:;"  onclick="setHomepage('http://www.eeban.com/');">设为首页</a>
-                <a href="http://www.knight.com/"  onclick="addFavorite(this.href, '保研论坛-保研经验分享');return false;">收藏本站</a>
+                <a href="http://www.knight.com/"  onclick="addFavorite(this.href, '高校论坛');return false;">收藏本站</a>
             </div>
             <div class="y">
-                <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到宽版" class="switchwidth">切换到宽版</a>
+                <a href="#">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
     </div>
     <div id="hd">
         <div class="wp">
             <div class="hdc clearfix">
-                <h2 style="float:left">
-                    <a title="保研论坛-保研经验分享" href="javascript:;">
-                        <img alt="保研论坛-保研经验分享" src="./image/logo.png" border="0">
+                <div style="float:left">
+                    <a title="高校论坛" href="javascript:;">
+                        <img alt="高校论坛" src="./image/logo.png" border="0">
                     </a>
-                </h2>
+                </div>
                 <script src="data/cache/logging.js?j3e" type="text/javascript"></script>
                 <form id="lsform" onsubmit="return lsSubmit();" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes"method="post" autocomplete="off">
                     <div class="fastlg">
@@ -727,8 +72,8 @@
                             <input name="quickforward" type="hidden" value="yes"/>
                             <input name="handlekey" type="hidden" value="ls"/>
                         </div>
-                        <link href="./src/plugins/oculus.css?t=1486453586" rel="stylesheet">
-                        <link disabled="" href="./src/plugins/nc.css?t=1486453586" rel="stylesheet">
+                        <!--<link href="./src/plugins/oculus.css?t=1486453586" rel="stylesheet">-->
+                        <!--<link disabled="" href="./src/plugins/nc.css?t=1486453586" rel="stylesheet">-->
                         <script src="./src/plugins/nc.js?t=1486453586" type="text/javascript"></script>
                         <script src="./src/plugins/oculus.js?t=1486453586" type="text/javascript"></script>
                         <div id="nc-float" style="display:none">
@@ -782,22 +127,22 @@
                 <a href="javascript:;" id="qmenu" onmouseover="delayShow(this,function(){showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu();})" href="javascript:;">快捷导航</a>
                 <ul>
                     <li class="a" id="mn_forum">
-                        <a href="talkShow.html" hidefocus="true" title="BBS">保研首页</a>
+                        <a href="#" hidefocus="true" title="BBS">首页</a>
                     </li>
                     <li id="mn_N8d07">
-                        <a href="talkShow.html" hidefocus="true" target="_blank">微博</a>
+                        <a href="https://weibo.com/p/1005053787836194/home?from=page_100505&mod=TAB&is_all=1#place" hidefocus="true" target="_blank">微博</a>
                     </li>
                     <li id="mn_N847e">
-                        <a href="talkShow.html" hidefocus="true" target="_blank">保研辅导</a>
+                        <a href="http://www.wendu.com" hidefocus="true" target="_blank">辅导</a>
                     </li>
                     <li id="mn_Nffd3">
-                        <a href="talkShow.html" hidefocus="true" target="_blank">实习求职</a>
+                        <a href="http://www.internbird.com" hidefocus="true" target="_blank">实习求职</a>
                     </li>
                     <li id="mn_N4aba">
-                        <a href="talkShow.html" hidefcus="true" target="_blank">知了学习社</a>
+                        <a href="https://www.nowcoder.com" hidefcus="true" target="_blank">牛客网</a>
                     </li>
                     <li id="mn_N58a5">
-                        <a href="talkShow.html" hidefocus="true" title="点击留言">联系我们</a>
+                        <a href="./MyEditor/Editor/Editor.html" hidefocus="true" title="点击留言" target="_blank">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -818,7 +163,7 @@
                                     <input name="srchtxt" class="xgl" id="scbar_txt" type="text" placeholder="请输入搜索内容" autocomplete="off" speech="" x-webkit-speech="" value="请输入搜索内容"/>
                                 </td>
                                 <td class="scbar_type_td">
-                                     <a class="xgl" id="scbar_type" hidefocus="true" onclick="showMenu(this.id)" href="javascript:;">帖子</a>
+                                     <a class="xgl" id="scbar_type" hidefocus="true" onclick="showMenu(this.id)" href="javascript:">帖子</a>
                                 </td>
                                 <td class="scbar_btn_td">
                                     <button name="searchsubmit" class="pn pnc" id="scbar_btn" type="submit" value="true" sc="1">
@@ -829,8 +174,9 @@
                                     <div id="scbar_hot">
                                         <strong class="xw1">热搜: </strong>
 
-                                        <a href="search.php?mod=forum&amp;srchtxt=%E4%BF%9D%E7%A0%94&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">保研</a>
-                                        <a href="search.php?mod=forum&amp;srchtxt=%E5%A4%8F%E4%BB%A4%E8%90%A5&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">夏令营</a>
+                                        <a href="https://www.baidu.com/s?tn=80035161_2_dg&wd=%E9%AB%98%E8%80%83" target="_blank" class="xi2" sc="1">高考</a>
+                                        <a href="http://yz.chsi.com.cn/" target="_blank" class="xi2" sc="1">考研</a>
+                                        <a href="http://www.chsi.com.cn/" target="_blank" class="xi2" sc="1">学信网</a>
                                         <a href="search.php?mod=forum&amp;srchtxt=%E6%8E%A8%E5%85%8D&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">推免</a>
                                         <a href="search.php?mod=forum&amp;srchtxt=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0&amp;formhash=becfb93b&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">招生简章</a>
 
@@ -854,9 +200,6 @@
             <script type="text/javascript">initSearchmenu('scbar','');</script>
         </div>
     </div>
-    <!--<div class="wp">-->
-        <!--<div style="width:960px;height:1px;background-color:#fe9500"></div>-->
-    <!--</div>-->
     <div id="nc-float" style="display:none">
         <div class="nc-f-head">
             <img class="nc-f-icon" src="./image/TB1_3FrKVXXXXbdXXXXXXXXXXXX-129-128.png" alt="" height="20" width="20">
@@ -872,9 +215,9 @@
     <div class="wp" id="wp">
         <div class="bm clearfix" id="pt">
             <div class="z">
-                <a title="首页" class="nvhm" href="./">保研论坛-保研经验分享</a>
+                <a title="首页" class="nvhm" href="#">高校论坛</a>
                 <em></em>
-                <a href="talkShow.html">保研首页</a>
+                <a href="#">首页</a>
             </div>
             <div class="z"></div>
         </div>
@@ -889,7 +232,7 @@
                                         <tr>
                                             <td width="100%">
                                                 <p></p>
-                                                <table align="center" bordercolor="#00ff99" border="1px">
+                                                <table align="center" style="border:1px solid #00ff99">
                                                     <tbody>
                                                         <tr>
                                                             <td align="center">
@@ -902,7 +245,7 @@
                                                             <td align="center">
                                                                 <a href="talkShow.html" target="_blank">
                                                                     <font color="red" size="2">
-                                                                        <b>保研论坛建立临时新站的通知</b>
+                                                                        <b>高校论坛临时维护的通知</b>
                                                                     </font>
                                                                 </a>
                                                             </td>
@@ -918,7 +261,7 @@
                                                             <td align="center">
                                                                 <a href="talkShow.html" target="_blank">
                                                                     <font color="black" size="2">
-                                                                        <b>保研论坛出品：知了学习社</b>
+                                                                        <b>高校论坛</b>
                                                                     </font>
                                                                 </a>
                                                             </td>
@@ -1011,7 +354,6 @@
                 </tbody>
             </table>
         </div>
-        <style id="diy_style" type="text/css"></style>
         <div class="wp">
             <!--[diy=diy1]-->
             <div class="area" id="diy1"></div>
@@ -1046,13 +388,13 @@
             <!--[/diy]-->
             <div class="mn">
                 <script type="text/javascript">
-                    window.onerror=function(){return true;}
+                    window.onerror=function(){return true;};
                     function _f(obj){
                         return (document.getElementById(obj));
                     }
                     function turn(n,m,x){
                         for(i=1;i<=m;i++) {
-                            if(i==n){
+                            if(i===n){
                                 _f('lm'+x+'_'+i).className="now";
                                 _f('content'+x+'_'+i).style.display="";
                             } else {
@@ -1358,7 +700,7 @@
                                 <img title="收起/展开" id="category_36_img" onclick="toggle_collapse('category_36');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">准EEer交流</a>
+                                <a href="./EEer-0.html">学生交流</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_36" style="">
@@ -1373,7 +715,7 @@
                                             </div>
                                             <dl>
                                                 <dt>
-                                                    <a href="talkShow.html">保研（信息、材料、经验）</a>
+                                                    <a href="Camp-0.html">保研（信息、材料、经验）</a>
                                                     <em title="今日" class="xw0 xil">(41)</em>
                                                 </dt>
                                                 <dd>
@@ -1486,7 +828,7 @@
                                 <img title="收起/展开" id="category_41_img" onclick="toggle_collapse('category_41');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">夏令营专区</a>
+                                <a href="EEer-1.html">夏令营专区</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_41" style="">
@@ -1644,7 +986,7 @@
                                 <a class="notabs" id="ajaxid_0.07477567999328505" href="talkShow.html" c="1" mid="card_9678">Knight</a>
                             </span>
                             <h2>
-                                <a href="talkShow.html">交流提高&休闲娱乐专区</a>
+                                <a href="EEer-2.html">交流提高&休闲娱乐专区</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_110">
@@ -1930,7 +1272,7 @@
                                 <img title="收起/展开" id="category_1_img" onclick="toggle_collapse('category_1');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">站务专版</a>
+                                <a href="EEer-3.html">站务专版</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_1" style="">
@@ -2084,7 +1426,7 @@
                                 <img title="收起/展开" id="category_47_img" onclick="toggle_collapse('category_47');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">研究所专区 </a>
+                                <a href="EEer-4.html">研究所专区 </a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_47" style="">
@@ -2183,7 +1525,7 @@
                                 <img title="收起/展开" id="category_50_img" onclick="toggle_collapse('category_50');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">华北地区高校</a>
+                                <a href="EEer-5.html">华北地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_50" style="">
@@ -3156,7 +2498,7 @@
                                 <img title="收起/展开" id="category_155_img" onclick="toggle_collapse('category_155');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">东北地区高校</a>
+                                <a href="EEer-6.html">东北地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_155" style="">
@@ -3506,7 +2848,7 @@
                                 <img title="收起/展开" id="category_68_img" onclick="toggle_collapse('category_68');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">华东地区高校</a>
+                                <a href="EEer-7.html">华东地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_68" style="">
@@ -4479,7 +3821,7 @@
                                 <img title="收起/展开" id="category_168_img" onclick="toggle_collapse('category_168');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">华南地区高校</a>
+                                <a href="EEer-8.html">华南地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_168" style="">
@@ -4803,7 +4145,7 @@
                                 <img title="收起/展开" id="category_84_img" onclick="toggle_collapse('category_84');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">华中地区高校</a>
+                                <a href="EEer-9.html">华中地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_84" style="">
@@ -5179,7 +4521,7 @@
                                 <img title="收起/展开" id="category_86_img" onclick="toggle_collapse('category_86');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">西南地区高校</a>
+                                <a href="EEer-10.html">西南地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_86" style="">
@@ -5503,7 +4845,7 @@
                                 <img title="收起/展开" id="category_169_img" onclick="toggle_collapse('category_169');" alt="收起/展开" src="./image/collapsed_no.gif.png"/>
                             </span>
                             <h2>
-                                <a href="talkShow.html">西北地区高校</a>
+                                <a href="EEer-11.html">西北地区高校</a>
                             </h2>
                         </div>
                         <div class="bm_c" id="category_169" style="">
@@ -5927,12 +5269,12 @@
                                 </div>
                             </li>
                             <li class="lk_logo mbm bbda clearfix">
-                                <img alt="知了学习社" src="./image/zhiliao.jpg" border="0"/>
+                                <img alt="知了学习社" src="./image/NewCode.jpg" border="0"/>
                                 <div class="lk_content z">
                                     <h5>
-                                        <a href="http://www.zhiliaoxuexi.com" target="_blank">知了学习社</a>
+                                        <a href="https://www.nowcoder.com" target="_blank">牛客网</a>
                                     </h5>
-                                    <p>高校碎片化学习app/计算机、经管、心理学</p>
+                                    <p>专业IT笔试面试备考平台</p>
                                 </div>
                             </li>
                         </ul>
@@ -5952,7 +5294,7 @@
                             <a href="talkShow.html">小黑屋</a>
                             <span class="pipe">|</span>
                             <strong>
-                                <a href="talkShow.html" target="_blank">保研论坛-保研经验分享</a>
+                                <a href="talkShow.html" target="_blank">高校论坛</a>
                             </strong>
                             (
                             <a href="talkShow.html" target="_blank">沪ICP备14002018号-1</a>
